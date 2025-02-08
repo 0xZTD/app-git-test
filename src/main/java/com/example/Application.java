@@ -10,19 +10,17 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class Application {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
         Logger log = LoggerFactory.getLogger(Application.class);
         log.info("Java app started");
     }
 
     public String getStatus() {
-        return "OK";
+        return "I fixed something";
     }
 }
