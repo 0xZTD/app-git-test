@@ -17,10 +17,10 @@ public class Application {
     @PostConstruct
     public void init() {
         Logger log = LoggerFactory.getLogger(Application.class);
-        log.info("Java app started");
+        log.info("fixed something else app started");
     }
 
     public String getStatus() {
-        return "I fixed something";
+        return "I fixed selse";
     }
 }
